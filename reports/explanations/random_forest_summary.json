@@ -1,0 +1,8 @@
+{
+  "model": "random_forest",
+  "shap_summary": "explanations/random_forest_shap_summary.png",
+  "lime_examples": [
+    "random_forest_lime/lime_instance_415.html",
+    "random_forest_lime/lime_instance_2928.html"
+  ]
+}

@@ -1,0 +1,35 @@
+data:
+  raw_dir: data
+  interim_dir: data/interim
+  processed_dir: data/processed
+  application_filename: application_record.csv
+  credit_filename: credit_record.csv
+  output_dataset: processed_credit.parquet
+
+preprocessing:
+  id_column: ID
+  target_column: default_status
+  test_size: 0.2
+  validation_size: 0.1
+  random_state: 42
+  imputation_strategy: median
+  categorical_encoding: target
+  balance_method: smote
+
+modeling:
+  algorithms:
+    - logistic_regression
+    - random_forest
+  scoring: roc_auc
+  n_jobs: -1
+
+artifacts_dir: artifacts/models
+
+explainability:
+  shap:
+    sample_size: 20
+  lime:
+    sample_size: 2
+    num_features: 10
+    num_samples: 500
+  output_dir: reports/explanations
