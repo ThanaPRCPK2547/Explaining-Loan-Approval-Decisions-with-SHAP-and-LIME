@@ -1,0 +1,45 @@
+# Operating system and editor cruft
+.DS_Store
+.vscode/
+.idea/
+*.code-workspace
+
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+.coverage.*
+coverage/
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Project-generated data and artifacts
+artifacts/
+data/**/*.csv
+data/**/*.parquet
+reports/explanations/
+
+# Model binaries and derived reports
+*.joblib
+*.jolib
+*.json
+*.png
+*.html
