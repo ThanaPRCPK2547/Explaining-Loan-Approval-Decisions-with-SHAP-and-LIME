@@ -1,8 +1,0 @@
-{
-  "model": "logistic_regression",
-  "shap_summary": "explanations/logistic_regression_shap_summary.png",
-  "lime_examples": [
-    "logistic_regression_lime/lime_instance_415.html",
-    "logistic_regression_lime/lime_instance_2928.html"
-  ]
-}
